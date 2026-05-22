@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Areas | Wilson Solicitors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Wilson Solicitors home">
+      <span class="brand-mark">WS</span>
+      <span>
+        <strong>Wilson Solicitors</strong>
+        <small data-i18n="brandSub">International Law Firm</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" data-i18n="navHome">Home</a>
+      <a href="practice.html" aria-current="page" data-i18n="navPractice">Practice Areas</a>
+      <a href="team.html" data-i18n="navTeam">Lawyers & Branches</a>
+    </nav>
+    <label class="language-picker">
+      <span data-i18n="languageLabel">Language</span>
+      <select id="languageSelect" aria-label="Choose language">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Português</option>
+        <option value="ar">العربية</option>
+        <option value="zh">中文</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ja">日本語</option>
+      </select>
+    </label>
+    <div class="global-translate" id="google_translate_element" aria-label="All languages"></div>
+  </header>
+
+  <main>
+    <section class="page-hero practice-hero">
+      <p class="eyebrow" data-i18n="practiceEyebrow">Legal services</p>
+      <h1 data-i18n="practiceTitle">Advice for every serious legal matter.</h1>
+      <p data-i18n="practiceText">Our lawyers handle individuals, families, businesses, investors, and institutions with international interests.</p>
+    </section>
+
+    <section class="practice-grid">
+      <article><h2 data-i18n="areaCorporate">Corporate & Commercial</h2><p data-i18n="areaCorporateText">Contracts, company formation, governance, mergers, acquisitions, and commercial disputes.</p></article>
+      <article><h2 data-i18n="areaLitigation">Litigation & Dispute Resolution</h2><p data-i18n="areaLitigationText">Civil claims, arbitration, mediation, debt recovery, injunctions, and enforcement.</p></article>
+      <article><h2 data-i18n="areaImmigration">Immigration & Nationality</h2><p data-i18n="areaImmigrationText">Visas, work permits, family routes, appeals, citizenship, and cross-border mobility.</p></article>
+      <article><h2 data-i18n="areaFamily">Family & Private Client</h2><p data-i18n="areaFamilyText">Divorce, child arrangements, wills, probate, trusts, inheritance, and asset protection.</p></article>
+      <article><h2 data-i18n="areaProperty">Property & Real Estate</h2><p data-i18n="areaPropertyText">Residential and commercial transactions, leases, landlord matters, and development advice.</p></article>
+      <article><h2 data-i18n="areaEmployment">Employment & Labour</h2><p data-i18n="areaEmploymentText">Contracts, workplace disputes, executive exits, discrimination, and employer compliance.</p></article>
+      <article><h2 data-i18n="areaCriminal">Criminal Defence</h2><p data-i18n="areaCriminalText">Investigations, interviews, bail, trial preparation, appeals, and regulatory offences.</p></article>
+      <article><h2 data-i18n="areaInternational">International Legal Coordination</h2><p data-i18n="areaInternationalText">Multi-country strategy for clients whose legal needs cross borders.</p></article>
+    </section>
+  </main>
+
+  <button class="chat-toggle" id="chatToggle" aria-label="Open chat" data-i18n="chatButton">Chat</button>
+  <aside class="chat-panel" id="chatPanel" aria-label="Client chat" hidden>
+    <div class="chat-header"><strong data-i18n="chatTitle">Wilson Solicitors Chat</strong><button id="chatClose" aria-label="Close chat">×</button></div>
+    <div class="chat-messages" id="chatMessages"><p class="bot" data-i18n="chatWelcome">Good day. Tell us the country and legal matter, and our intake team will guide the next step.</p></div>
+    <form class="chat-form" id="chatForm"><input id="chatInput" type="text" data-i18n-placeholder="chatPlaceholder" placeholder="Type your message..."><button type="submit" data-i18n="chatSend">Send</button></form>
+  </aside>
+
+  <footer class="site-footer">
+    <p>© 2026 Wilson Solicitors</p>
+    <p data-i18n="footerText">International legal services across Europe, USA, Canada, and Australia.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

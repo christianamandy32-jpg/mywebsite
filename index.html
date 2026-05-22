@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wilson Solicitors | International Law Firm</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Wilson Solicitors home">
+      <span class="brand-mark">WS</span>
+      <span>
+        <strong>Wilson Solicitors</strong>
+        <small data-i18n="brandSub">International Law Firm</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page" data-i18n="navHome">Home</a>
+      <a href="practice.html" data-i18n="navPractice">Practice Areas</a>
+      <a href="team.html" data-i18n="navTeam">Lawyers & Branches</a>
+    </nav>
+
+    <label class="language-picker">
+      <span data-i18n="languageLabel">Language</span>
+      <select id="languageSelect" aria-label="Choose language">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Português</option>
+        <option value="ar">العربية</option>
+        <option value="zh">中文</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ja">日本語</option>
+      </select>
+    </label>
+    <div class="global-translate" id="google_translate_element" aria-label="All languages"></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow" data-i18n="heroEyebrow">Europe • USA • Canada • Australia</p>
+        <h1 data-i18n="heroTitle">Classic counsel for complex international matters.</h1>
+        <p data-i18n="heroText">Wilson Solicitors brings 15 international lawyers together for business, family, immigration, property, criminal, civil, and dispute matters across major jurisdictions.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="team.html#contact" data-i18n="consultButton">Request Consultation</a>
+          <a class="button secondary" href="practice.html" data-i18n="servicesButton">View Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band">
+      <div class="intro-copy">
+        <p class="section-kicker" data-i18n="introKicker">A worldwide legal desk</p>
+        <h2 data-i18n="introTitle">One firm, coordinated advice, global reach.</h2>
+      </div>
+      <div class="stats-grid" aria-label="Firm statistics">
+        <div>
+          <strong>15</strong>
+          <span data-i18n="statLawyers">International lawyers</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span data-i18n="statRegions">Major regions</span>
+        </div>
+        <div>
+          <strong>24/7</strong>
+          <span data-i18n="statSupport">Client response desk</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="whyKicker">Why clients choose us</p>
+        <h2 data-i18n="whyTitle">Serious legal work with a calm, traditional standard.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">§</span>
+          <h3 data-i18n="featureOneTitle">Full-service matters</h3>
+          <p data-i18n="featureOneText">From corporate contracts to litigation, immigration, family law, real estate, employment, and regulatory issues.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">⚖</span>
+          <h3 data-i18n="featureTwoTitle">Cross-border judgment</h3>
+          <p data-i18n="featureTwoText">Teams coordinate across Europe, the United States, Canada, and Australia for clients with international needs.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">✒</span>
+          <h3 data-i18n="featureThreeTitle">Discreet client care</h3>
+          <p data-i18n="featureThreeText">A confidential intake process, responsive updates, and clear next steps from the first conversation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <blockquote data-i18n="quoteText">“Our work is built on preparation, discretion, and steady advocacy across borders.”</blockquote>
+      <p data-i18n="quoteBy">Managing Partner, Wilson Solicitors</p>
+    </section>
+  </main>
+
+  <button class="chat-toggle" id="chatToggle" aria-label="Open chat" data-i18n="chatButton">Chat</button>
+  <aside class="chat-panel" id="chatPanel" aria-label="Client chat" hidden>
+    <div class="chat-header">
+      <strong data-i18n="chatTitle">Wilson Solicitors Chat</strong>
+      <button id="chatClose" aria-label="Close chat">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <p class="bot" data-i18n="chatWelcome">Good day. Tell us the country and legal matter, and our intake team will guide the next step.</p>
+    </div>
+    <form class="chat-form" id="chatForm">
+      <input id="chatInput" type="text" data-i18n-placeholder="chatPlaceholder" placeholder="Type your message...">
+      <button type="submit" data-i18n="chatSend">Send</button>
+    </form>
+  </aside>
+
+  <footer class="site-footer">
+    <p>© 2026 Wilson Solicitors</p>
+    <p data-i18n="footerText">International legal services across Europe, USA, Canada, and Australia.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
